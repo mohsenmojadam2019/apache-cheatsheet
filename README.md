@@ -1,11 +1,13 @@
 # Cors
 ## Set cors headers
 ```
+Header always set Access-Control-Allow-Origin "*"
 Header always set Access-Control-Allow-Methods  "*"
 Header always set Access-Control-Allow-Headers "Content-Type, x-requested-with, Authorization, Accept"
 ```
 ## Add cors headers (May result duplicate headers)
 ```
+Header always set Access-Control-Allow-Origin "*"
 Header add Access-Control-Allow-Methods  "*"
 Header add Access-Control-Allow-Headers "Content-Type, x-requested-with, Authorization, Accept"
 ```
