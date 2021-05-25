@@ -26,3 +26,5 @@ RewriteRule ^/?(.*) "ws://localhost:3000/$1" [P,L]
 ```
 RewriteRule ^ - [R=410,L]
 ```
+## Unset Header
+Header unset Access-Control-Allow-Origin
