@@ -11,6 +11,11 @@ Header add Access-Control-Allow-Origin "*"
 Header add Access-Control-Allow-Methods  "*"
 Header add Access-Control-Allow-Headers "Content-Type, x-requested-with, Authorization, Accept"
 ```
+## Add success status for option requests (use with always set)
+```
+RewriteCond %{REQUEST_METHOD} OPTIONS
+RewriteRule .* / [R=200,L]
+```
 # Proxy pass
 ## Proxy pass http and websocket
 ```
